@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="./stylesheets/read.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-main">
+        <div class="header-logo">
+          <img class="headerback" src="./images/投票.jpg" alt="#">
+        </div>
+        <div class="header-title"><b>投票网</b></div>
+    </div>
+</div>
+<!--中间投票的地方-->
+<div class="infor">
+       <div class="total"><span>姓名：{{Obj.name}}</span></div>
+       <ul>
+           {{#each Obj.addrArry}}
+           <li><span>投票地址：{{this}}</span></li>
+           {{/each}}
+       </ul>
+</div>
+
+<div class="footer">
+    <div class="footer-link">
+        <h4>常用链接</h4>
+        <ul class="link-list">
+            <li><a href="https://www.baidu.com/" target="_blank">百度</a></li>
+
+            <li><a href="https://www.google.com/" target="_blank">谷歌</a></li>
+            <li><a href="https://juejin.im/" target="_blank">掘金社区</a></li>
+            <li><a href="https://www.zhihu.com/signin?next=%2F" target="_blank">知乎</a></li>
+            <li><a href="https://github.com/" target="_blank">Github</a></li>
+            <li><a href="https://www.qq.com/" target="_blank">腾讯</a></li>
+            <li><a href="https://cn.aliyun.com/" target="_blank">阿里云</a></li>
+            <li><a href="https://www.163.com/" target="_blank">网易</a></li>
+            <li><a href="http://www.sohu.com/" target="_blank">搜狐</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer-down">
+    <span>Copyright © 2019 Sohu All Rights Reserved. 廷宇 版权所有</span>
+    <span>邮箱：2362543978@qq.com</span>
+</div>
+
+</body>
+</html>

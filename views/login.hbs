@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录投票系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="./stylesheets/login.css">
+<!--    <link rel="stylesheet" href="./stylesheets/main.css">-->
+</head>
+<body>
+
+<div class="login-box">
+    <h2>登录</h2>
+
+
+        <div class="login-field">
+            <input type="text" name="number" required="" class="number"  />
+            <label>账号</label>
+            <p class="acc-err"></p>
+        </div>
+        <div class="login-field">
+            <input type="password" name="psd" required="" class="psd" />
+            <label >密码</label>
+            <p class="psd-err"></p>
+        </div>
+        <a href="/register" style="color: #50a3a2 ">没有账号？去注册</a><br><br>
+        <button type="submit" onclick="Login(this)">登录</button>
+
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="./javascripts/web3.min.js"></script>
+<script src="./javascripts/login.js"></script>
+</body>
+</html>

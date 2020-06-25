@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册账户</title>
+    <link rel="stylesheet" href="./stylesheets/register.css">
+</head>
+<body>
+<div class="wrap">
+        <div class="container">
+            <h1 style="color: #f0ad4e; margin: 0; text-align: center">注册账户</h1>
+            <form action="/register" method="post" enctype="application/x-www-form-urlencoded">
+    <label><input type="text" placeholder="姓名"  id="user"  class="user" name="user" /></label>
+    <label><input type="text" placeholder="电话" onblur="fun1(this)" class="mobile" name="mobile" /></label>
+    <label><input type="password" placeholder="密码" onblur="fun2(this)" class="psd" name="psd" /></label>
+    <label><input type="password" placeholder="确认密码" onblur="fun3(this)"class="newpsd" /></label>
+    <input type="text" style="display: none" class="myaccount" name="myaccount">
+    <a style="margin-left: 470px" href="/login" class="to_login"> 已有账户？去登录 </a>
+          <input type="submit" value="注册"  onclick="RegisterClick(this)"/>                                 
+             </form>
+        </div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="./javascripts/web3.min.js"></script>
+<script src="./javascripts/register.js"></script>
+
+</body>
+</html>
+ 

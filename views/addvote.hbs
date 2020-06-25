@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="./stylesheets/addvote.css">
+</head>
+<body>
+
+<div class="midd">
+    <div class="w-title">
+            <article class="main-content">
+                <header class="page-title-wrap">
+                    <h1 class="page-title">创建投票</h1>
+                </header>
+                <div class="entry-content">
+                    <p>
+                        <label for="">投票标题</label>
+                        <br>
+                        <input type="text" class="votetitle"  style="width: 550px;height: 30px">
+                    </p>
+                    <div style="font-size: 30px">
+                        投票截止日期：
+                        <br>
+                        <input type="text" class="day" >天 <input type="text" class="hour">时 <input type="text" class="minute">分
+                    </div>
+                    <button  type="submit" onclick="createTitle()">提交</button>
+                </div>
+
+            </article>
+    </div>
+   <div class="sb-widget">
+        <div class="widget-content">
+            <h4 class="widget-title">各类投票示例</h4>
+            <ul>
+                <li><a href="#">文字投票示例</a></li>
+                <li><a href="#">图片投票示例</a></li>
+                <li><a href="#">视频投票示例</a></li>
+                <li><a href="#" >密码投票示例</a></li>
+                <li><a href="#" >金会员投票示例</a></li>
+                <li><a href="#" >无评论投票示例</a></li>
+                <li><a href="#" >选项说明投票示例</a></li>
+                <li><a href="#" >不显示结果投票示例</a></li>
+                <li><a href="#" >只能在微信里投票示例</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="./javascripts/web3.min.js"></script>
+<script src="./javascripts/person.js"></script>
+</body>
+</html><!DOCTYPE html>

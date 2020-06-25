@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="./stylesheets/main.css">
+    <link rel="stylesheet" href="./stylesheets/detail.css">
+</head>
+<body>
+<div class="header">
+    <header>
+        <div class="header-main">
+            <div class="header-logo">
+                <a href="#"><img class="headerback" src="./images/投票.jpg" alt="#"></a>
+            </div>
+            <div class="header-title"><a href="/index" style="text-decoration: none;color: black"><b>投票网</b></a></div>
+            {{#if Obj.username}}
+                <div class="after-login"><p>欢迎回来！<a href="#" onmouseover="aMove(this)" onmouseout="aOut(this)">{{Obj.username}}</a>
+                    <a href="javascript:void(0)" onclick="delLogin(this)" style="color: red">注销</a></p>
+                </div>
+                <div  class="blcok-div">
+                    <ul class="block-ul">
+                        <li>电 话: <label for="" class="phone">{{Obj.phone}}</label></li>
+                        <li>余 额：<label for="" class="balance" value="{{Obj.banlance}}">{{Obj.banlance}}FTY</label></li>
+                    </ul>
+                </div>
+                <!--            未登陆的时候-->
+            {{else}}
+                <div class="header-menu">     <!--两个class属性-->
+                    <ul class="main-menu">
+                        <li><a href="/register">注册</a></li>
+                        <li><a href="/login">登录</a></li>
+                        <li><a href="#">帮助</a></li>
+                    </ul>
+                </div>
+            {{/if}}
+        </div>
+    </header>
+
+</div>
+<!--中间投票的地方-->
+<div class="content">
+          <div class="title-main">
+              <div class="clearfix">
+                  <div class="entry-avater"><img src="./images/头像.jpg" alt=""></div>
+<!--                  存放标题简介-->
+                  <h1 class="entry-title"></h1>
+
+              </div>
+              <p class="entry-meta">
+                  <img class="fa-clock" src="./images/time.jpg" alt="时间">
+                  <span class="clock-s"></span>
+                  <img  class="fa-read"  src="./images/view.png" alt="投票数">
+                  <span class="read-s"></span>
+                  <img  class="fa-admin"  src="./images/admin.jpg" alt="">
+                  <span class="">admin</span>
+              </p>
+
+          </div>
+        <div class="votemain">
+            <div class="introduce"></div>
+                <div class="member-list">
+                <ul class="member-ul">
+<!--                    <li><div class="member-info">-->
+<!--                        <span class="mem-name">姓名：</span>-->
+<!--                        <span class="mem-intro">介绍：</span>-->
+<!--                        <span class="mem-ticket">当前票数：</span>-->
+<!--                        <input type="submit" value="投票"  />   -->
+<!--                    </div></li>-->
+                </ul>
+        </div>
+    </div>
+</div>
+<div id="cover"></div>
+<div  id="modal">
+    <label class="la1" for="">候选人名称：<input type="text"style="height: 30px;width: 300px"></label>
+    <label class="la2" for="">候选人介绍：<textarea style="height: 100px;width: 300px"></textarea></label>
+    <button class="sure" onclick="MakeSure()">确认</button>
+    <button class="cancel" onclick="Cancel()">返回</button>
+</div>
+<div class="footer">
+    <div class="footer-link">
+        <h4>常用链接</h4>
+        <ul class="link-list">
+            <li><a href="https://www.baidu.com/" target="_blank">百度</a></li>
+
+            <li><a href="https://www.google.com/" target="_blank">谷歌</a></li>
+            <li><a href="https://juejin.im/" target="_blank">掘金社区</a></li>
+            <li><a href="https://www.zhihu.com/signin?next=%2F" target="_blank">知乎</a></li>
+            <li><a href="https://github.com/" target="_blank">Github</a></li>
+            <li><a href="https://www.qq.com/" target="_blank">腾讯</a></li>
+            <li><a href="https://cn.aliyun.com/" target="_blank">阿里云</a></li>
+            <li><a href="https://www.163.com/" target="_blank">网易</a></li>
+            <li><a href="http://www.sohu.com/" target="_blank">搜狐</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer-down">
+    <span>Copyright © 2019 Sohu All Rights Reserved. 廷宇 版权所有</span>
+    <span>邮箱：2362543978@qq.com</span>
+</div>
+<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+<script src="./javascripts/web3.min.js"></script>
+<script src="./javascripts/detail.js"></script>
+<script src="./javascripts/app.js"></script>
+</body>
+</html><!DOCTYPE html>

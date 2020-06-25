@@ -1,0 +1,8 @@
+body{margin: auto;padding: 0}
+.midd{display: flex;justify-content: space-around}
+
+.entry-content p{font-size: 50px;}
+.widget-content{margin-top: 40px;width: 300px}
+.widget-content li{list-style: none;margin-top: 14px}
+.page-title-wrap{border-bottom: 1px solid #e3e3e3}
+button{width: 80px;height:30px;margin-top: 30px;margin-left: 195px}

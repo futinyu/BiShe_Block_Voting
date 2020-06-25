@@ -1,0 +1,40 @@
+body{width: 100%;height: 100%; overflow-x:hidden;background-color: #e3e3e3}
+.header{width: 60%;height: 100%;margin: auto}
+.header-main{width: 100%;height: auto;margin: auto;display: flex;
+    justify-content: space-around;background-color: white;}
+.header-logo{width: auto;height: 100px;}
+.header-title b{line-height: 100px;color: black;font-size: 29px}
+.headerback{width: 200px;height: 100px;;background-size: 100%;}
+.infor{width: 60%;height: 100%;margin: auto;background:white }
+.total{width: 100%;height: 100px;border-top: 1px solid #e3e3e3;padding: 1cm 0 0 4cm;font-size: 20px}
+.infor ul li{list-style: none;padding: 0 1cm 1cm 1cm;font-size: 20px;color: black}
+
+.footer{width: 60%;height: 100%;margin: auto;background-color: white}
+.link-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-top: 10px;
+    height: 100px;
+
+}
+.link-list li {
+    list-style: none;
+    width: 80px;
+    text-align: center;
+}
+.content{width: 60%;height: 100%;margin: auto;background-color: white}
+.footer-down {
+    margin: auto;
+    width: 60%;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    background-color: #7985CC;
+}
+.footer-down span {
+    font-size: 14px;
+    margin: 0 30px;
+}

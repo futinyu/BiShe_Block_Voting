@@ -1,0 +1,32 @@
+body{width: 100%;height: 100%; overflow-x:hidden;background-color: #e3e3e3;padding:0}
+.header{width: 60%;height: 100%;margin: auto}
+.newvote{width: 60%;height: 100%;margin: auto}
+.footer{width: 60%;height: 100%;margin: auto;background-color: white}
+.link-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-top: 10px;
+    height: 80px;
+
+}
+.link-list li {
+    list-style: none;
+    width: 80px;
+    text-align: center;
+}
+.content{width: 60%;height: 100%;margin: auto;background-color: white}
+.footer-down {
+    margin: auto;
+    width: 60%;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    background-color: #7985CC;
+}
+.footer-down span {
+    font-size: 14px;
+    margin: 0 30px;
+}
